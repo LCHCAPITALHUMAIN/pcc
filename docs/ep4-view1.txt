@@ -1,0 +1,9 @@
+SELECT
+  CAST(date as date) as date,
+  CampaignName,
+  CAST(impressions as float64) AS impressions,
+  CAST(clicks as float64) AS clicks,
+  CAST(cost as float64) AS cost,
+  CAST(conversions as float64) AS conversions
+FROM
+  `client-test-275515.raw_data.t_googleads_campaigns`
